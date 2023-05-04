@@ -10,11 +10,16 @@ body {
     flex-direction: column;
 }
 
-.header-container {
+.header-container,
+.intro-container,
+.footer {
     display: flex;
     justify-content: center;
+    background-color: #1F2937
+}
+
+.header-container {
     padding: 16px 0;
-    background-color: #1F2937;
 }
 
 .header {
@@ -23,29 +28,34 @@ body {
     justify-content: space-between;
 }
 
-.header .logo {
+.header .logo,
+.sign-up .action {
     color: #F9FAF8;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .header .links {
     display: flex;
     list-style-type: none;
-    font-size: 18px;
     margin-left: 350px;
+}
+
+a,
+.intro .text,
+.intro .img-placeholder,
+.sign-up .text,
+.footer {
+    color: #E5E7EB;
+    font-size: 18px;
 }
 
 a {
     text-decoration: none;
-    color: #E5E7EB;
     margin-left: 20px;
 }
 
 .intro-container {
-    background-color: #1F2937;
-    display: flex;
-    justify-content: center;
     padding: 100px;
 }
 
@@ -67,30 +77,30 @@ a {
 }
 
 .intro .text {
-    font-size: 18px;
-    color: #E5E7EB;
     margin-bottom: 12px;
 }
 
-.intro button {
+.intro button,
+.sign-up button {
     background-color: #3882F6;
     color: #F9FAF8;
     font-weight: bold;
     padding: 8px 32px;
     border-radius: 8px;
-    border: none;
     font-size: 16px;
+}
+
+.intro button {
+    border: none;
 }
 
 .intro .img-placeholder {
     background-color: rgb(107, 110, 116);
-    color: #E5E7EB;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 700px;
     height: 210px;
-    font-size: 18px;
 }
 
 .info-container {
@@ -101,7 +111,6 @@ a {
 }
 
 .info-container .title {
-    display: flex;
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
@@ -169,33 +178,11 @@ a {
     margin: 80px 0;
 }
 
-.sign-up .action {
-    color: #F9FAF8;
-    font-size: 24px;
-    font-weight: 800;
-}
-
-.sign-up .text {
-    font-size: 18px;
-    color: #E5E7EB;
-}
-
 .sign-up button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    font-weight: bold;
-    padding: 8px 32px;
-    border-radius: 8px;
     border-style: solid;
     border-color: #F9FAF8;
-    font-size: 16px;
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
-    color: #E5E7EB;
     padding: 32px 0;
-    background-color: #1F2937;
 }
